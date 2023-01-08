@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Los Mexicas - Reservation Page</title>
+	<meta name="description" content="Los Mexicas reservations for unique mexican food in Sacramento California.">
+	<meta name="robots" content="index, follow">
+	<meta name="keywords" content="Mexican food online reservations and delivery. Make your dining reservations near you. ">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" />
+    <link href="css/all.min.css" rel="stylesheet" />
+	<link href="css/templatemo-style.css" rel="stylesheet" />
+	<link rel="stylesheet" href="assets/css/rb_forms.css">
+	<link rel="stylesheet" href="assets/css/rb_reset.css">
+	<link rel="stylesheet" href="assets/css/rb_styles.css">
+	<link rel="stylesheet" href="assets/css/rb_styles.css">
+	<link rel="stylesheet" href="assets/css/rb_formsubmit.js">
+	
+	
+	
+	
+</head>
+<!--
+
+Simple House
+
+https://templatemo.com/tm-539-simple-house
+
+-->
+<body> 
+
+	<div class="container">
+	<!-- Top box -->
+		<!-- Logo & Site Name -->
+		<div class="placeholder">
+			<div class="parallax-window" data-parallax="scroll" data-image-src="img/simple-house-01.jpg">
+				<div class="tm-header">
+					<div class="row tm-header-inner">
+						<div class="col-md-6 col-12">
+							<img src="img/simple-house-logo.png" alt="Logo" class="tm-site-logo" /> 
+							<div class="tm-site-text-box">
+								<h1 class="tm-site-title">Unique</h1><br>
+								<h6 class="tm-site-description">Mexican Cuisine</h6>	
+							</div>
+						</div>
+						<nav class="col-md-6 col-12 tm-nav">
+							<ul class="tm-nav-ul">
+								<li class="tm-nav-li"><a href="finalproject.htm" class="tm-nav-link">Home</a></li>
+								<li class="tm-nav-li"><a href="online.htm" class="tm-nav-link">Order</a></li>
+								<li class="tm-nav-li"><a href="reservations.htm" class="tm-nav-link">Reservations</a></li>
+								<li class="tm-nav-li"><a href="about.htm" class="tm-nav-link">About</a></li>
+								<li class="tm-nav-li"><a href="contact.htm" class="tm-nav-link">Contact</a></li>
+							</ul>
+						</nav>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<main>
+			<header class="row tm-welcome-section">
+				<h2 class="col-12 text-center tm-section-title">Reservations</h2>
+				
+			</header>
+    <section>
+      
+      <p>&nbsp &nbsp &nbsp &nbsp Please fill the form below accurately to enable us serve you better! Welcome !</p>
+      
+	  <form id="survey" action="http://www.szimmerman.com/websvcs/contact" method="post"> 
+	  <fieldset id="custInfo">
+	       <legend>Customer Reservation</legend>
+		   <div class="formRow">
+		   <label for="name">Name*</label>
+		   <input name="custName" id="name" type="text" placeholder="first and last name" required />
+		   </div>
+		   
+		   <div class="formRow">
+		   <label for="street">Street address</label>
+		   <input name="custStreet" id="street" type="text" />
+		   </div>
+		   
+		   <div class="formRow">
+		   <label for="city">City</label>
+		   <input name="custCity" id="city" type="text" value="Sacramento" />
+		   </div>
+		   
+		   <div class="formRow">
+           <label for="state">State</label>		   
+		   <input name="custState" id="state" type="text" value="CA" />
+		   </div>
+		   
+		   <div class="formRow"> 
+		   <label for="zip">Postal code</label>
+		   <input name="custZip" id="zip" type="text" placeholder="nnnnn(-nnnn)" 
+		          pattern="^\d{5}(-\d{4})?$" />
+		   </div>
+		   
+		   <div class="formRow"> 
+		   <label for="phone">Phone number</label>
+		   <input name="custPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn"
+                  pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+		   </div>
+		   
+		   <div class="formRow"> 
+		   <label for="mail">E-mail</label>
+		   <input name="custEmail" id="mail" type="email" required />
+		   </div>
+		   
+		    
+		   <div class="formRow">
+		   <label for="dish">Reservation Type (please select)</label>
+		   <input name="favDish" id="dish" type="text" list="dishType" />
+		   <datalist id="dishType">
+		       <option value="Dinner">
+		       <option value="VIP">
+			   <option value="Birthday">
+		       <option value="Anniversary">
+			   <option value="Private">
+			   <option value="Wedding">
+			   <option value="Corporate">
+			   <option value="Holiday">
+		   </datalist>
+		   </div>
+		   
+		   <div class="formRow">
+		   <label for="dineSpin">Number of Guests</label>
+		   <input name="dineOut" id="dineSpin" type="number"
+		          value="1" step="1" min="0" max="20" />
+		   </div>
+		   
+		   
+		   
+		   		  
+	  </fieldset>
+	  
+	  <fieldset id="expInfo">
+	       <legend>Reservation Date and Times</legend>
+		   
+		   <div class="formRow">
+		      <label for="visit">Please select the date</label>
+			  <input name="visitDate" id="visit" type="date" />
+		   </div>
+		   
+		   <div class="formRow">
+		       <label for="order">Please select the time</label>
+			   <select name="orderType" id="order">
+			     <option value="order1">10:00 am - 11:00 am</option>
+		         <option value="order2">11:00 am - 12:00 noon</option>
+		         <option value="order3" selected>12:00 noon - 1:00 pm</option>
+				 <option value="order4">1:00 pm - 2:00 pm</option>
+		         <option value="order5">2:00 pm - 3:00 pm</option>
+				 <option value="order6">3:00 pm - 4:00 pm</option>
+				 <option value="order7">4:00 pm - 5:00 pm</option>
+				 <option value="order8">5:00 pm - 6:00 pm</option>
+				 <option value="order9">6:00 pm - 7:00 pm</option>
+				 <option value="order10">7:00 pm - 8:00 pm</option>
+				 <option value="order11">8:00 pm - 9:00 pm</option>
+				 <option value="order12">9:00 pm - 12:00 pm</option>
+				 <option value="order13">10:00 pm - 11:00 pm</option>
+			   </select>
+		    </div>
+						
+				
+			<label for="commBox">Please provide more details for your order</label>
+			<textarea name="custExp" id="commBox"></textarea>
+							       
+	  </fieldset>
+	  
+	  	  	  
+	  </form>
+
+      <div class="form-group tm-d-flex">
+	  <div id="buttons" class="tm-btn tm-btn-success tm-btn-right">
+	  <input type="submit" value="Submit My Reservation" />
+	  <input type="reset" value="Cancel" />
+	  </div>
+      </div
+
+
+
+
+
+     
+   </section>
+
+
+		<footer class="tm-footer text-center">
+			<p>Copyright &copy; 2022 Los Mexicas  
+            
+            
+		</footer>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+			
+			for (i = 0; i < acc.length; i++) {
+			  acc[i].addEventListener("click", function() {
+			    this.classList.toggle("active");
+			    var panel = this.nextElementSibling;
+			    if (panel.style.maxHeight) {
+			      panel.style.maxHeight = null;
+			    } else {
+			      panel.style.maxHeight = panel.scrollHeight + "px";
+			    }
+			  });
+			}	
+		});
+	</script>
+</body>
+</html>
